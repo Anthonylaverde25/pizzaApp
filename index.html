@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--STYLES: GENERALES, MOBILE AND DESKTOP -->
+    <link rel="stylesheet" href="CSS/generales.css" />
+    <link rel="stylesheet" href="CSS/mobile.css" />
+    <link rel="stylesheet" href="CSS/tablet.css" />
+    <link rel="stylesheet" href="CSS/desktop.css" />
+
+    <title>App pizza</title>
+  </head>
+
+  <body>
+    <!--container__app es el contenedor general de la app-->
+    <div class="app container__app">
+      <header class="header">
+        <div class="header__logo">
+          <h1 class="header__title">All Pizza</h1>
+          <img class="header__logoImg" src="img/pizza_icon.png" alt="" />
+        </div>
+
+        <form class="search">
+          <input
+            class="search__field"
+            type="text"
+            placeholder="Search by id..."
+          />
+          <button type="submit" class="btn search__btn">
+            <img class="icon_svg" src="/img/lupa.svg" alt="" />
+          </button>
+        </form>
+      </header>
+
+      <main class="main container__main">
+        <!-- main tendra 2 secciones. la primera para la imagen y su nomobre y la segunda para la info genral-->
+
+        <section class="currentPizza">
+          <div class="currentPizza__img">
+            <div class="currentPizza__title"></div>
+          </div>
+        </section>
+
+        <section class="currentInfo">
+          <div class="currenInfo__error">
+            <h2>try again</h2>
+            <p>this id is not valid. try again</p>
+          </div>
+
+          <div class="currentInfo__container">
+            <!--
+            <div class="currentInfo__price">
+              <h3>Precio: $ 5000</h3>
+            </div>-->
+          </div>
+
+          <div class="currentInfo__Ingredients">
+            <h2>Ingredientes de esta pizza</h2>
+            <ul class="ingredients">
+              <li class="ingredient">Muzzarella</li>
+              <li class="ingredient">Queso Azul</li>
+              <li class="ingredient">Parmesano</li>
+              <li class="ingredient">Roquefort</li>
+              <li class="ingredient">Tomates</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <a href="https://github.com/Anthonylaverde25" target="_blank"
+        >By Anthony Laverde</a
+      >
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

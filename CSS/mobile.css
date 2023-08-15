@@ -1,0 +1,185 @@
+/* HEADER*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #f9f5f3;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.header__logoImg {
+  width: 50px;
+  height: 50px;
+  opacity: 70%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 50%;
+  height: 50px;
+}
+
+.search__field {
+  text-align: center;
+
+  width: 100px;
+  height: 30px;
+}
+
+.search__field::placeholder {
+  font-family: var(--font_general);
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.search__btn {
+  background-color: transparent;
+  height: 30px;
+  padding: 0.3em;
+}
+
+.search__btn:hover {
+  cursor: pointer;
+}
+
+/*  MAIN */
+.currentPizza {
+  position: relative;
+  background-color: var(--backgraound_general);
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.currentPizza__img {
+  height: 60vh;
+  max-width: 100%;
+  /* background-image: url(../img/4quesos.png);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.currentPizza__title {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 70px;
+  font-family: var(--font_general);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: wheat;
+  background-color: rgba(234, 82, 82, 0.501);
+}
+
+.currentInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--backgraound_general);
+  font-family: var(--font_general);
+  padding: 1em;
+  width: 100%;
+  margin-top: 50px;
+  background: #f5f0ee;
+}
+
+.currentInfo__price {
+  text-align: center;
+  padding: 0.5em 0;
+  color: #0a0a0a8d;
+}
+
+.currentInfo__container {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.currentInfo__Ingredients {
+  opacity: 0;
+  padding: 1em;
+}
+
+.currentInfo__Ingredients H2 {
+  font-family: var(--title);
+  color: rgb(66, 64, 64);
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.currentInfo__Ingredients .icon_img {
+  top: 90%;
+  left: 70%;
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.ingredients {
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.ingredient {
+  text-align: center;
+  padding: 2em 0;
+  margin-bottom: 20px;
+  line-height: 2px;
+
+  text-transform: uppercase;
+  font-family: 500;
+}
+
+.show_erro {
+  display: flex;
+}
+.currenInfo__error {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  padding: 1em;
+  font-family: var(--font_general);
+  border-radius: 10px;
+  border: 1px solid rgb(176, 95, 95);
+  background-color: #bc988516;
+}
+
+.currenInfo__error H2 {
+  font-weight: 500;
+  padding: 1rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.currenInfo__error p {
+}
+
+footer {
+  background: #f5f0ee;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  letter-spacing: 1px;
+
+  color: black;
+}
